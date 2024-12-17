@@ -14,7 +14,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 mongoose
-  .connect(process.env.URI)
+  .connect(
+    'mongodb+srv://netninja:Salinas051288@node-tuts.4ygbqsh.mongodb.net/?retryWrites=true&w=majority&appName=Node-tuts'
+  )
   .then(() => {
     `Connected to MongoDB.`;
   })
