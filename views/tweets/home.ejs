@@ -3,7 +3,8 @@
    <div class="container container-main">
     <h1>Tweet List</h1>
      <% for(let tweet of tweets){ %>
-        <li><%= tweet.username%> - <%= tweet.tweet %></li>
+        <li><%= tweet.username%> </li>
+        <li>- <%= tweet.tweet %></li>
      <% } %>
      <br>
      <form action="/create" method="GET">
