@@ -1,0 +1,11 @@
+<%- include('../partials/head.ejs') %>
+  <body>
+    <H1>Create New Tweet</H1>
+    <form action="/create" method="POST">
+      <input type="text" name="username" id="" placeholder="USERNAME" />
+      <input type="text" name="tweet" id="" placeholder="TWEET" />
+      <Button>Submit</Button>
+    </form>
+    <a href="/tweets">Home</a>
+  </body>
+</html>
